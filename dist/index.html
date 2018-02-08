@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Health</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=""/>
+    <link rel="icon" href="favicon.png"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="header__nav-container">
+        <h1 class="header__logo">insure.</h1>
+        <input type="checkbox" class="header__checkbox" id="burger">
+        <label class="header__burger" for="burger">menu</label>
+        <ul class="header__menu">
+            <li class="header__menu-item">
+                <a href="#">Personal Plans</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="#">Business Plans</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="#">Guide</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="#">Blog</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<main class="general-info">
+    <div class="general-info__list-block">
+        <h2 class="general-info__list-name">Insurance list:</h2>
+        <div class="general-info__buttons">
+            <div class="general-info__button-container">
+                <button id="row"></button>
+            </div>
+            <div class="general-info__button-container">
+                <button id="grid" type="button"></button>
+            </div>
+        </div>
+    </div>
+    <div class="general-info__data-name">
+        <p class="general-info__data">company</p>
+        <p class="general-info__data">covering</p>
+        <p class="general-info__data">type</p>
+        <p class="general-info__data">metal level</p>
+        <p class="general-info__data">drugs</p>
+        <p class="general-info__data">primary care visits</p>
+        <p class="general-info__data">yearly deductible</p>
+        <p class="general-info__data">price</p>
+    </div>
+    <div class="general-info__row-view" id="row-view">
+        <div class="general-info__company-container">             <!--________1________-->
+            <div class="general-info__company -first-item">
+                <div class="general-info__about-company general-info__inline">
+                    <img src="./assets/company%20logo.png" alt="Insurcom" class="general-info__logo">
+                    <h4 class="general-info__name-company">Insurcom</h4>
+                    <ul class="general-info__rating">
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="general-info__records-container -covering-margin">
+                <p class="general-info__records general-info__inline">Health</p>
+            </div>
+            <div class="general-info__records-container -type-margin">
+                <p class="general-info__records general-info__inline">PPO<span title="PPO">?</span></p>
+            </div>
+            <div class="general-info__records-container -metal-margin -color-circle-platinum">
+                <p class="general-info__records general-info__inline">Platinum<span
+                        title="Platinum">?</span></p>
+            </div>
+            <div class="general-info__records-container -drugs-margin">
+                <p class="general-info__records general-info__inline">$15</p>
+            </div>
+            <div class="general-info__records-container -visits-margin">
+                <p class="general-info__records general-info__inline">$75</p>
+            </div>
+            <div class="general-info__records-container -yearly-margin">
+                <p class="general-info__records general-info__inline">$6000</p>
+            </div>
+            <div class="general-info__records-container">
+                <p class="general-info__records general-info__inline">$356/mon</p>
+            </div>
+            <div class="general-info__order-navigation general-info__inline">
+                <button>overview</button>
+                <button>buy</button>
+            </div>
+        </div>
+        <div class="general-info__company-container">               <!--________2________-->
+            <div class="general-info__company">
+                <div class="general-info__about-company general-info__inline">
+                    <img src="./assets/company%20logo%20(1).png" alt="Insurcom" class="general-info__logo">
+                    <h4 class="general-info__name-company -hi-padding">Health Inc</h4>
+                    <ul class="general-info__rating">
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span class="star-disable">★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span class="star-disable">★</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="general-info__records-container -covering-margin">
+                <p class="general-info__records general-info__inline">All-in-one</p>
+            </div>
+            <div class="general-info__records-container -type-margin">
+                <p class="general-info__records general-info__inline">HMO<span title="HMO">?</span></p>
+            </div>
+            <div class="general-info__records-container -metal-margin -color-circle-silver">
+                <p class="general-info__records general-info__inline ">Silver<span title="Silver">?</span></p>
+            </div>
+            <div class="general-info__records-container -drugs-margin">
+                <p class="general-info__records general-info__inline">100%</p>
+            </div>
+            <div class="general-info__records-container -visits-margin">
+                <p class="general-info__records general-info__inline">$45</p>
+            </div>
+            <div class="general-info__records-container -yearly-margin">
+                <p class="general-info__records general-info__inline">$4500</p>
+            </div>
+            <div class="general-info__records-container">
+                <p class="general-info__records general-info__inline">$611/mon</p>
+            </div>
+            <div class="general-info__order-navigation general-info__inline">
+                <button>overview</button>
+                <button>buy</button>
+            </div>
+        </div>
+        <div class="general-info__company-container">               <!--________3________-->
+            <div class="general-info__company">
+                <div class="general-info__about-company general-info__inline">
+                    <img src="./assets/company%20logo%20(2).png" alt="Insurcom" class="general-info__logo">
+                    <h4 class="general-info__name-company -denta-padding">Dentalife</h4>
+                    <ul class="general-info__rating">
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span class="star-disable">★</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="general-info__records-container -covering-margin">
+                <p class="general-info__records general-info__inline">Dental</p>
+            </div>
+            <div class="general-info__records-container -type-margin">
+                <p class="general-info__records general-info__inline">EPO<span title="EPO">?</span></p>
+            </div>
+            <div class="general-info__records-container -metal-margin  -color-circle-gold">
+                <p class="general-info__records general-info__inline">Gold<span title="Gold">?</span></p>
+            </div>
+            <div class="general-info__records-container -drugs-margin">
+                <p class="general-info__records general-info__inline">100%</p>
+            </div>
+            <div class="general-info__records-container -visits-margin">
+                <p class="general-info__records general-info__inline">$75</p>
+            </div>
+            <div class="general-info__records-container -yearly-margin">
+                <p class="general-info__records general-info__inline">$5000</p>
+            </div>
+            <div class="general-info__records-container">
+                <p class="general-info__records general-info__inline">$283/mon</p>
+            </div>
+            <div class="general-info__order-navigation general-info__inline">
+                <button>overview</button>
+                <button>buy</button>
+            </div>
+        </div>
+        <div class="general-info__company-container">               <!--________4________-->
+            <div class="general-info__company">
+                <div class="general-info__about-company general-info__inline">
+                    <img src="./assets/company%20logo.png" alt="Insurcom" class="general-info__logo">
+                    <h4 class="general-info__name-company">Insurcom</h4>
+                    <ul class="general-info__rating">
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="general-info__records-container -covering-margin">
+                <p class="general-info__records general-info__inline">Vision</p>
+            </div>
+            <div class="general-info__records-container -type-margin">
+                <p class="general-info__records general-info__inline">POS<span title="POS">?</span></p>
+            </div>
+            <div class="general-info__records-container -metal-margin -color-circle-bronze">
+                <p class="general-info__records general-info__inline">Bronze<span
+                        title="Bronze">?</span></p>
+            </div>
+            <div class="general-info__records-container -drugs-margin">
+                <p class="general-info__records general-info__inline">100%</p>
+            </div>
+            <div class="general-info__records-container -visits-margin">
+                <p class="general-info__records general-info__inline">$260</p>
+            </div>
+            <div class="general-info__records-container -yearly-margin">
+                <p class="general-info__records general-info__inline">$2600</p>
+            </div>
+            <div class="general-info__records-container">
+                <p class="general-info__records general-info__inline">$214/mon</p>
+            </div>
+            <div class="general-info__order-navigation general-info__inline">
+                <button>overview</button>
+                <button>buy</button>
+            </div>
+        </div>
+        <div class="general-info__company-container">                <!--________5________-->
+            <div class="general-info__company">
+                <div class="general-info__about-company general-info__inline">
+                    <img src="./assets/company%20logo%20(3).png" alt="Insurcom" class="general-info__logo">
+                    <h4 class="general-info__name-company -medicon-padding">Medicon</h4>
+                    <ul class="general-info__rating">
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="general-info__records-container -covering-margin">
+                <p class="general-info__records general-info__inline">Health</p>
+            </div>
+            <div class="general-info__records-container -type-margin">
+                <p class="general-info__records general-info__inline">PPO<span title="PPO">?</span></p>
+            </div>
+            <div class="general-info__records-container -metal-margin  -color-circle-catastrophic">
+                <p class="general-info__records general-info__inline">Catactrophic<span
+                        title="Catastrophic">?</span></p>
+            </div>
+            <div class="general-info__records-container -drugs-margin">
+                <p class="general-info__records general-info__inline">$20</p>
+            </div>
+            <div class="general-info__records-container -visits-margin">
+                <p class="general-info__records general-info__inline">40%</p>
+            </div>
+            <div class="general-info__records-container -yearly-margin">
+                <p class="general-info__records general-info__inline">$6000</p>
+            </div>
+            <div class="general-info__records-container">
+                <p class="general-info__records general-info__inline">$300/mon</p>
+            </div>
+            <div class="general-info__order-navigation general-info__inline">
+                <button>overview</button>
+                <button>buy</button>
+            </div>
+        </div>
+        <div class="general-info__company-container">                    <!--________6________-->
+            <div class="general-info__company">
+                <div class="general-info__about-company general-info__inline">
+                    <img src="./assets/company%20logo%20(1).png" alt="Insurcom" class="general-info__logo">
+                    <h4 class="general-info__name-company -hi-padding">Health Inc</h4>
+                    <ul class="general-info__rating">
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span class="star-disable">★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span class="star-disable">★</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="general-info__records-container -covering-margin">
+                <p class="general-info__records general-info__inline">Dental</p>
+            </div>
+            <div class="general-info__records-container -type-margin">
+                <p class="general-info__records general-info__inline">POS<span title="POS">?</span></p>
+            </div>
+            <div class="general-info__records-container -metal-margin -color-circle-platinum">
+                <p class="general-info__records general-info__inline ">Platinum<span title="Platinum">?</span></p>
+            </div>
+            <div class="general-info__records-container -drugs-margin">
+                <p class="general-info__records general-info__inline">$15</p>
+            </div>
+            <div class="general-info__records-container -visits-margin">
+                <p class="general-info__records general-info__inline">$75</p>
+            </div>
+            <div class="general-info__records-container -yearly-margin">
+                <p class="general-info__records general-info__inline">$5000</p>
+            </div>
+            <div class="general-info__records-container">
+                <p class="general-info__records general-info__inline">$234/mon</p>
+            </div>
+            <div class="general-info__order-navigation general-info__inline">
+                <button>overview</button>
+                <button>buy</button>
+            </div>
+        </div>
+        <div class="general-info__company-container">                   <!--________7________-->
+            <div class="general-info__company">
+
+                <div class="general-info__about-company general-info__inline">
+                    <img src="./assets/company%20logo.png" alt="Insurcom" class="general-info__logo">
+                    <h4 class="general-info__name-company">Insurcom</h4>
+                    <ul class="general-info__rating">
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="general-info__records-container -covering-margin">
+                <p class="general-info__records general-info__inline">Health</p>
+            </div>
+            <div class="general-info__records-container -type-margin">
+                <p class="general-info__records general-info__inline">HMO<span title="HMO">?</span></p>
+            </div>
+            <div class="general-info__records-container -metal-margin -color-circle-gold">
+                <p class="general-info__records general-info__inline">Gold<span title="Gold">?</span></p>
+            </div>
+            <div class="general-info__records-container -drugs-margin">
+                <p class="general-info__records general-info__inline">100%</p>
+            </div>
+            <div class="general-info__records-container -visits-margin">
+                <p class="general-info__records general-info__inline">$45</p>
+            </div>
+            <div class="general-info__records-container -yearly-margin">
+                <p class="general-info__records general-info__inline">$4500</p>
+            </div>
+            <div class="general-info__records-container">
+                <p class="general-info__records general-info__inline">$366/mon</p>
+            </div>
+            <div class="general-info__order-navigation general-info__inline">
+                <button>overview</button>
+                <button>buy</button>
+            </div>
+        </div>
+        <div class="general-info__company-container">                       <!--________8________-->
+            <div class="general-info__company">
+                <div class="general-info__about-company general-info__inline">
+                    <img src="./assets/company%20logo%20(3).png" alt="Insurcom" class="general-info__logo">
+                    <h4 class="general-info__name-company -medicon-padding">Medicon</h4>
+                    <ul class="general-info__rating">
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                        <li class="general-info__star">
+                            <span>★</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="general-info__records-container -covering-margin">
+                <p class="general-info__records general-info__inline">All-in-one</p>
+            </div>
+            <div class="general-info__records-container -type-margin">
+                <p class="general-info__records general-info__inline">EPO<span title="EPO">?</span></p>
+            </div>
+            <div class="general-info__records-container -metal-margin  -color-circle-catastrophic">
+                <p class="general-info__records general-info__inline">Catactrophic<span
+                        title="Catastrophic">?</span></p>
+            </div>
+            <div class="general-info__records-container -drugs-margin">
+                <p class="general-info__records general-info__inline">$15</p>
+            </div>
+            <div class="general-info__records-container -visits-margin">
+                <p class="general-info__records general-info__inline">50%</p>
+            </div>
+            <div class="general-info__records-container -yearly-margin">
+                <p class="general-info__records general-info__inline">$2600</p>
+            </div>
+            <div class="general-info__records-container">
+                <p class="general-info__records general-info__inline">$371/mon</p>
+            </div>
+            <div class="general-info__order-navigation general-info__inline">
+                <button>overview</button>
+                <button>buy</button>
+            </div>
+        </div>
+    </div>
+    <!--______________GRID_______________-->
+    <div class="general-info__grid-container" id="grid-view">
+        <div class="general-info__company-item-grid">           <!--___1___-->
+            <div class="general-info__about-company general-info__about-company-grid general-info__inline">
+                <img src="./assets/company%20logo.png" alt="Insurcom" class="general-info__logo">
+                <h4 class="general-info__name-company">Insurcom</h4>
+                <ul class="general-info__rating">
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Covering:</p>
+                <p class=" general-info__records-grid general-info__inline">Health</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Type:</p>
+                <p class=" general-info__records-grid general-info__inline">PPO<span
+                        title="PPO">?</span></p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Metal level:</p>
+                <p class="general-info__records-grid general-info__inline -color-circle-platinum">
+                    Platinum<span title="Platinum">?</span></p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="drugs">?</span>Drugs:</p>
+                <p class=" general-info__records-grid general-info__inline">$15</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="visits">?</span>Primary Care
+                    Visits:</p>
+                <p class=" general-info__records-grid general-info__inline">$75</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="deductible">?</span>Yearly
+                    Deductible</p>
+                <p class=" general-info__records-grid general-info__inline">$6000</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__records general-info__records-grid general-info__inline">$356/mon</p>
+            </div>
+            <div class="general-info__order-navigation general-info__order-navigation-grid general-info__inline">
+                <button>overview</button>
+                <button>buy</button>
+            </div>
+        </div>
+        <div class="general-info__company-item-grid">           <!--___2___-->
+            <div class="general-info__about-company general-info__about-company-grid general-info__inline">
+                <img src="./assets/company%20logo%20(1).png" alt="Health" class="general-info__logo">
+                <h4 class="general-info__name-company">Health Ins</h4>
+                <ul class="general-info__rating">
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span class="star-disable">★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span class="star-disable">★</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Covering:</p>
+                <p class=" general-info__records-grid general-info__inline">All-in-one</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Type:</p>
+                <p class=" general-info__records-grid general-info__inline">HMO<span
+                        title="HMO">?</span></p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Metal level:</p>
+                <p class=" general-info__records-grid general-info__inline -color-circle-silver">
+                    Silver<span title="Silver">?</span></p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="drugs">?</span>Drugs:</p>
+                <p class=" general-info__records-grid general-info__inline">$100</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="visits">?</span>Primary Care
+                    Visits:</p>
+                <p class=" general-info__records-grid general-info__inline">$45</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="deductible">?</span>Yearly
+                    Deductible</p>
+                <p class=" general-info__records-grid general-info__inline">$4500</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__records general-info__records-grid general-info__inline">$611/mon</p>
+            </div>
+            <div class="general-info__order-navigation general-info__order-navigation-grid general-info__inline">
+                <button>overview</button>
+                <button>buy</button>
+            </div>
+        </div>
+        <div class="general-info__company-item-grid">           <!--___3___-->
+            <div class="general-info__about-company general-info__about-company-grid general-info__inline">
+                <img src="./assets/company%20logo%20(2).png" alt="Dental" class="general-info__logo">
+                <h4 class="general-info__name-company">Dentalife</h4>
+                <ul class="general-info__rating">
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span class="star-disable">★</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Covering:</p>
+                <p class=" general-info__records-grid general-info__inline">Dental</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Type:</p>
+                <p class=" general-info__records-grid general-info__inline">EPO<span
+                        title="EPO">?</span></p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Metal level:</p>
+                <p class="general-info__records-grid general-info__inline -color-circle-gold">
+                    Gold<span title="Gold">?</span></p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="drugs">?</span>Drugs:</p>
+                <p class=" general-info__records-grid general-info__inline">$15</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="visits">?</span>Primary Care
+                    Visits:</p>
+                <p class=" general-info__records-grid general-info__inline">$75</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="deductible">?</span>Yearly
+                    Deductible</p>
+                <p class=" general-info__records-grid general-info__inline">$6000</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__records general-info__records-grid general-info__inline">$283/mon</p>
+            </div>
+            <div class="general-info__order-navigation general-info__order-navigation-grid general-info__inline">
+                <button>overview</button>
+                <button>buy</button>
+            </div>
+        </div>
+        <div class="general-info__company-item-grid">           <!--___4___-->
+            <div class="general-info__about-company general-info__about-company-grid general-info__inline">
+                <img src="./assets/company%20logo.png" alt="Insurcom" class="general-info__logo">
+                <h4 class="general-info__name-company">Insurcom</h4>
+                <ul class="general-info__rating">
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Covering:</p>
+                <p class=" general-info__records-grid general-info__inline">Vision</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Type:</p>
+                <p class=" general-info__records-grid general-info__inline">POS<span
+                        title="POS">?</span></p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Metal level:</p>
+                <p class="general-info__records-grid general-info__inline -color-circle-bronze">
+                    Bronze<span title="Bronze">?</span></p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="drugs">?</span>Drugs:</p>
+                <p class=" general-info__records-grid general-info__inline">$15</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="visits">?</span>Primary Care
+                    Visits:</p>
+                <p class=" general-info__records-grid general-info__inline">$75</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="deductible">?</span>Yearly
+                    Deductible</p>
+                <p class=" general-info__records-grid general-info__inline">$6000</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__records general-info__records-grid general-info__inline">$214/mon</p>
+            </div>
+            <div class="general-info__order-navigation general-info__order-navigation-grid general-info__inline">
+                <button>overview</button>
+                <button>buy</button>
+            </div>
+        </div>
+        <div class="general-info__company-item-grid">           <!--___1___-->
+            <div class="general-info__about-company general-info__about-company-grid general-info__inline">
+                <img src="./assets/company%20logo.png" alt="Insurcom" class="general-info__logo">
+                <h4 class="general-info__name-company">Insurcom</h4>
+                <ul class="general-info__rating">
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Covering:</p>
+                <p class=" general-info__records-grid general-info__inline">Health</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Type:</p>
+                <p class=" general-info__records-grid general-info__inline">PPO<span
+                        title="PPO">?</span></p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Metal level:</p>
+                <p class="general-info__records-grid general-info__inline -color-circle-platinum">
+                    Platinum<span title="Platinum">?</span></p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="drugs">?</span>Drugs:</p>
+                <p class=" general-info__records-grid general-info__inline">$15</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="visits">?</span>Primary Care
+                    Visits:</p>
+                <p class=" general-info__records-grid general-info__inline">$75</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="deductible">?</span>Yearly
+                    Deductible</p>
+                <p class=" general-info__records-grid general-info__inline">$6000</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__records general-info__records-grid general-info__inline">$356/mon</p>
+            </div>
+            <div class="general-info__order-navigation general-info__order-navigation-grid general-info__inline">
+                <button>overview</button>
+                <button>buy</button>
+            </div>
+        </div>
+        <div class="general-info__company-item-grid">           <!--___2___-->
+            <div class="general-info__about-company general-info__about-company-grid general-info__inline">
+                <img src="./assets/company%20logo%20(1).png" alt="Health" class="general-info__logo">
+                <h4 class="general-info__name-company">Health Ins</h4>
+                <ul class="general-info__rating">
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span class="star-disable">★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span class="star-disable">★</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Covering:</p>
+                <p class=" general-info__records-grid general-info__inline">All-in-one</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Type:</p>
+                <p class=" general-info__records-grid general-info__inline">HMO<span
+                        title="HMO">?</span></p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Metal level:</p>
+                <p class=" general-info__records-grid general-info__inline -color-circle-silver">
+                    Silver<span title="Silver">?</span></p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="drugs">?</span>Drugs:</p>
+                <p class=" general-info__records-grid general-info__inline">$100</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="visits">?</span>Primary Care
+                    Visits:</p>
+                <p class=" general-info__records-grid general-info__inline">$45</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="deductible">?</span>Yearly
+                    Deductible</p>
+                <p class=" general-info__records-grid general-info__inline">$4500</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__records general-info__records-grid general-info__inline">$611/mon</p>
+            </div>
+            <div class="general-info__order-navigation general-info__order-navigation-grid general-info__inline">
+                <button>overview</button>
+                <button>buy</button>
+            </div>
+        </div>
+        <div class="general-info__company-item-grid">           <!--___3___-->
+            <div class="general-info__about-company general-info__about-company-grid general-info__inline">
+                <img src="./assets/company%20logo%20(2).png" alt="Dental" class="general-info__logo">
+                <h4 class="general-info__name-company">Dentalife</h4>
+                <ul class="general-info__rating">
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span class="star-disable">★</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Covering:</p>
+                <p class=" general-info__records-grid general-info__inline">Dental</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Type:</p>
+                <p class=" general-info__records-grid general-info__inline">EPO<span
+                        title="EPO">?</span></p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Metal level:</p>
+                <p class="general-info__records-grid general-info__inline -color-circle-gold">
+                    Gold<span title="Gold">?</span></p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="drugs">?</span>Drugs:</p>
+                <p class=" general-info__records-grid general-info__inline">$15</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="visits">?</span>Primary Care
+                    Visits:</p>
+                <p class=" general-info__records-grid general-info__inline">$75</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="deductible">?</span>Yearly
+                    Deductible</p>
+                <p class=" general-info__records-grid general-info__inline">$6000</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__records general-info__records-grid general-info__inline">$283/mon</p>
+            </div>
+            <div class="general-info__order-navigation general-info__order-navigation-grid general-info__inline">
+                <button>overview</button>
+                <button>buy</button>
+            </div>
+        </div>
+        <div class="general-info__company-item-grid">           <!--___4___-->
+            <div class="general-info__about-company general-info__about-company-grid general-info__inline">
+                <img src="./assets/company%20logo.png" alt="Insurcom" class="general-info__logo">
+                <h4 class="general-info__name-company">Insurcom</h4>
+                <ul class="general-info__rating">
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                    <li class="general-info__star general-info__star-size-grid">
+                        <span>★</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Covering:</p>
+                <p class=" general-info__records-grid general-info__inline">Vision</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Type:</p>
+                <p class=" general-info__records-grid general-info__inline">POS<span
+                        title="POS">?</span></p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view">Metal level:</p>
+                <p class="general-info__records-grid general-info__inline -color-circle-bronze">
+                    Bronze<span title="Bronze">?</span></p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="drugs">?</span>Drugs:</p>
+                <p class=" general-info__records-grid general-info__inline">$15</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="visits">?</span>Primary Care
+                    Visits:</p>
+                <p class=" general-info__records-grid general-info__inline">$75</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__description general-info__grid-view"><span title="deductible">?</span>Yearly
+                    Deductible</p>
+                <p class=" general-info__records-grid general-info__inline">$6000</p>
+            </div>
+            <div class="general-info__records-container general-info__records-grid-container">
+                <p class="general-info__records general-info__records-grid general-info__inline">$214/mon</p>
+            </div>
+            <div class="general-info__order-navigation general-info__order-navigation-grid general-info__inline">
+                <button>overview</button>
+                <button>buy</button>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="copyright">
+    <div class="copyright__container">
+        <h5 class="copyright__trademark">INSURE. All rights reserved 2017</h5>
+        <ul class="copyright__menu">
+            <li class="copyright__menu-item">
+                <a href="#">Personal Plans</a>
+            </li>
+            <li class="copyright__menu-item">
+                <a href="#">Business Plans</a>
+            </li>
+            <li class="copyright__menu-item">
+                <a href="#">Guide</a>
+            </li>
+            <li class="copyright__menu-item">
+                <a href="#">Blog</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<script src="js/onClickView.js"></script>
+</body>
+</html>
